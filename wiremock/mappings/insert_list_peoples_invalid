@@ -1,0 +1,20 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/people",
+    "headers" : {
+      "Authorization" : {
+        "contains" : "i am a session token"
+      },
+      "Body" : {
+        "contains": "[{\"id\":1,\"firstName\":Doug, \"lastName\":Smith,\"DOB\":2000-01-03,\"age\":20,}]"
+      }
+    }
+  },
+  "response": {
+    "status": 400,
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

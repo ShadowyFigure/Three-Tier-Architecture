@@ -1,0 +1,829 @@
+15:59:19.008 DEBUG main.main : Ya fucked up
+17:43:42.451 DEBUG main.People : CREATINGAdam Smith
+19:08:04.942 DEBUG main.People : CREATINGAdam Smith
+19:09:03.957 DEBUG main.People : CREATINGAdam Smith
+19:11:13.432 DEBUG main.People : CREATINGAdam Smith
+19:15:22.046 DEBUG main.People : CREATINGAdam Smith
+19:33:50.275 DEBUG main.People : CREATINGAdam Smith
+19:34:29.987 DEBUG main.People : CREATINGAdam Smith
+19:39:30.620 DEBUG main.People : CREATINGAdam Smith
+23:12:35.412 DEBUG main.People : CREATINGAdam Smith
+23:17:23.925 DEBUG main.People : CREATINGAdam Smith
+23:24:06.054 DEBUG main.People : CREATINGAdam Smith
+23:34:13.881 DEBUG main.People : CREATINGBob Blank
+23:34:13.884 DEBUG main.People : CREATINGJoe Handsum
+23:34:13.884 DEBUG main.People : CREATINGJermey Lopz
+23:35:44.181 DEBUG main.People : CREATINGBob Blank
+23:35:44.184 DEBUG main.People : CREATINGJoe Handsum
+23:35:44.185 DEBUG main.People : CREATINGJermey Lopz
+23:41:15.107 DEBUG main.People : CREATINGBob Blank
+23:41:15.110 DEBUG main.People : CREATINGJoe Handsum
+23:41:15.111 DEBUG main.People : CREATINGJermey Lopez
+23:41:17.659 INFO  detail.PeopleDetailController : UPDATING TextField[id=peopleFirstName, styleClass=text-input text-field] TextField[id=peopleLastName, styleClass=text-input text-field]
+23:41:17.660 DEBUG main.People : CREATINGBob Blank
+23:41:17.660 DEBUG main.People : CREATINGJoe Handsum
+23:41:17.661 DEBUG main.People : CREATINGJermey Lopez
+23:41:23.609 DEBUG main.People : CREATINGBob Blank
+23:41:23.609 DEBUG main.People : CREATINGJoe Handsum
+23:41:23.609 DEBUG main.People : CREATINGJermey Lopez
+23:41:39.552 DEBUG main.People : CREATINGBob Blank
+23:41:39.552 DEBUG main.People : CREATINGJoe Handsum
+23:41:39.552 DEBUG main.People : CREATINGJermey Lopez
+23:50:14.978 DEBUG main.People : CREATINGBob Blank
+23:50:14.981 DEBUG main.People : CREATINGJoe Handsum
+23:50:14.982 DEBUG main.People : CREATINGJermey Lopez
+23:50:20.554 DEBUG main.People : CREATINGBob Blank
+23:50:20.555 DEBUG main.People : CREATINGJoe Handsum
+23:50:20.555 DEBUG main.People : CREATINGJermey Lopez
+23:50:23.526 DEBUG main.People : CREATINGBob Blank
+23:50:23.527 DEBUG main.People : CREATINGJoe Handsum
+23:50:23.527 DEBUG main.People : CREATINGJermey Lopez
+23:50:26.054 DEBUG main.People : CREATINGBob Blank
+23:50:26.055 DEBUG main.People : CREATINGJoe Handsum
+23:50:26.055 DEBUG main.People : CREATINGJermey Lopez
+23:52:52.220 DEBUG main.People : CREATINGBob Blank
+23:52:52.223 DEBUG main.People : CREATINGJoe Handsum
+23:52:52.224 DEBUG main.People : CREATINGJermey Lopez
+23:52:54.106 INFO  list.PeopleListController : DELETING Jermey Lopez
+23:52:58.352 DEBUG main.People : CREATINGBob Blank
+23:52:58.352 DEBUG main.People : CREATINGJoe Handsum
+23:52:58.352 DEBUG main.People : CREATINGJermey Lopez
+23:53:01.160 DEBUG main.People : CREATINGBob Blank
+23:53:01.160 DEBUG main.People : CREATINGJoe Handsum
+23:53:01.161 DEBUG main.People : CREATINGJermey Lopez
+23:53:04.030 DEBUG main.People : CREATINGBob Blank
+23:53:04.031 DEBUG main.People : CREATINGJoe Handsum
+23:53:04.031 DEBUG main.People : CREATINGJermey Lopez
+23:55:10.824 DEBUG main.People : CREATINGBob Blank
+23:55:10.828 DEBUG main.People : CREATINGJoe Handsum
+23:55:10.828 DEBUG main.People : CREATINGJermey Lopez
+23:55:11.652 ERROR list.PeopleListController : No target selected
+23:55:14.574 INFO  list.PeopleListController : DELETING Jermey Lopez
+00:03:53.430 INFO  login.PeopleLoginController : TextField[id=username, styleClass=text-input text-field]LOGGED IN
+00:03:53.435 DEBUG main.People : CREATINGBob Blank
+00:03:53.435 DEBUG main.People : CREATINGJoe Handsum
+00:03:53.436 DEBUG main.People : CREATINGJermey Lopez
+00:04:06.717 INFO  list.PeopleListController : READING Jermey Lopez
+00:04:08.887 INFO  detail.PeopleDetailController : UPDATING TextField[id=peopleFirstName, styleClass=text-input text-field] TextField[id=peopleLastName, styleClass=text-input text-field]
+00:04:08.888 DEBUG main.People : CREATINGBob Blank
+00:04:08.888 DEBUG main.People : CREATINGJoe Handsum
+00:04:08.888 DEBUG main.People : CREATINGJermey Lopez
+00:04:11.193 ERROR list.PeopleListController : No target selected
+00:04:12.991 INFO  list.PeopleListController : DELETING Jermey Lopez
+00:04:18.413 INFO  list.PeopleListController : READING Jermey Lopez
+00:04:20.365 DEBUG main.People : CREATINGBob Blank
+00:04:20.365 DEBUG main.People : CREATINGJoe Handsum
+00:04:20.365 DEBUG main.People : CREATINGJermey Lopez
+00:04:26.851 ERROR list.PeopleListController : No target selected
+00:06:53.282 INFO  login.PeopleLoginController : TextField[id=username, styleClass=text-input text-field]LOGGED IN
+00:06:53.287 DEBUG main.People : CREATING Bob Blank
+00:06:53.288 DEBUG main.People : CREATING Joe Handsum
+00:06:53.288 DEBUG main.People : CREATING Jermey Lopez
+00:07:26.282 INFO  login.PeopleLoginController : TextField[id=username, styleClass=text-input text-field]LOGGED IN
+00:07:26.287 DEBUG main.People : CREATING Bob Blank
+00:07:26.287 DEBUG main.People : CREATING Joe Handsum
+00:07:26.288 DEBUG main.People : CREATING Jermey Lopez
+00:07:32.054 INFO  list.PeopleListController : READING Jermey Lopez
+00:07:40.902 INFO  detail.PeopleDetailController : UPDATING TextField[id=peopleFirstName, styleClass=text-input text-field] TextField[id=peopleLastName, styleClass=text-input text-field]
+00:07:40.903 DEBUG main.People : CREATING Bob Blank
+00:07:40.903 DEBUG main.People : CREATING Joe Handsum
+00:07:40.903 DEBUG main.People : CREATING Jermey Lopez
+00:07:43.919 INFO  list.PeopleListController : READING Jermey Lopez
+00:07:45.835 INFO  detail.PeopleDetailController : UPDATING TextField[id=peopleFirstName, styleClass=text-input text-field] TextField[id=peopleLastName, styleClass=text-input text-field]
+00:07:45.836 DEBUG main.People : CREATING Bob Blank
+00:07:45.836 DEBUG main.People : CREATING Joe Handsum
+00:07:45.836 DEBUG main.People : CREATING Jermey Lopez
+00:07:48.363 INFO  list.PeopleListController : READING Jermey Lopez
+00:07:49.370 DEBUG main.People : CREATING Bob Blank
+00:07:49.370 DEBUG main.People : CREATING Joe Handsum
+00:07:49.370 DEBUG main.People : CREATING Jermey Lopez
+00:07:50.699 ERROR list.PeopleListController : No target selected
+00:07:53.143 INFO  list.PeopleListController : DELETING Jermey Lopez
+00:10:03.842 INFO  login.PeopleLoginController : TextField[id=username, styleClass=text-input text-field]LOGGED IN
+00:10:03.847 DEBUG main.People : CREATING Bob Blank
+00:10:03.848 DEBUG main.People : CREATING Joe Handsum
+00:10:03.848 DEBUG main.People : CREATING Jermey Lopez
+00:10:08.704 ERROR list.PeopleListController : No target selected
+00:10:10.526 INFO  list.PeopleListController : READING Jermey Lopez
+00:10:13.310 INFO  detail.PeopleDetailController : UPDATING TextField[id=peopleFirstName, styleClass=text-input text-field] TextField[id=peopleLastName, styleClass=text-input text-field]
+00:10:13.311 DEBUG main.People : CREATING Bob Blank
+00:10:13.311 DEBUG main.People : CREATING Joe Handsum
+00:10:13.311 DEBUG main.People : CREATING Jermey Lopez
+00:10:21.731 INFO  list.PeopleListController : READING Jermey Lopez
+00:10:27.381 INFO  detail.PeopleDetailController : UPDATING TextField[id=peopleFirstName, styleClass=text-input text-field] TextField[id=peopleLastName, styleClass=text-input text-field]
+00:10:27.381 DEBUG main.People : CREATING Bob Blank
+00:10:27.382 DEBUG main.People : CREATING Joe Handsum
+00:10:27.382 DEBUG main.People : CREATING Jermey Lopez
+00:11:12.551 INFO  login.PeopleLoginController : TextField[id=username, styleClass=text-input text-field]LOGGED IN
+00:11:12.556 DEBUG main.People : CREATING Bob Blank
+00:11:12.557 DEBUG main.People : CREATING Joe Handsum
+00:11:12.557 DEBUG main.People : CREATING Jermey Lopez
+00:11:16.301 INFO  list.PeopleListController : READING Joe Handsum
+00:11:17.443 INFO  detail.PeopleDetailController : UPDATING TextField[id=peopleFirstName, styleClass=text-input text-field] TextField[id=peopleLastName, styleClass=text-input text-field]
+00:11:17.443 DEBUG main.People : CREATING Bob Blank
+00:11:17.443 DEBUG main.People : CREATING Joe Handsum
+00:11:17.444 DEBUG main.People : CREATING Jermey Lopez
+00:12:06.023 INFO  login.PeopleLoginController : TextField[id=username, styleClass=text-input text-field]LOGGED IN
+00:12:06.034 DEBUG main.People : CREATING Bob Blank
+00:12:06.035 DEBUG main.People : CREATING Joe Handsum
+00:12:06.035 DEBUG main.People : CREATING Jermey Lopez
+00:12:07.956 INFO  list.PeopleListController : READING Joe Handsum
+00:12:09.109 INFO  detail.PeopleDetailController : UPDATING Joe Handsum
+00:12:09.109 DEBUG main.People : CREATING Bob Blank
+00:12:09.109 DEBUG main.People : CREATING Joe Handsum
+00:12:09.109 DEBUG main.People : CREATING Jermey Lopez
+00:14:50.373 INFO  login.PeopleLoginController : TextField[id=username, styleClass=text-input text-field]LOGGED IN
+00:14:50.378 DEBUG main.People : CREATING Bob Blank
+00:14:50.378 DEBUG main.People : CREATING Joe Handsum
+00:14:50.378 DEBUG main.People : CREATING Jermey Lopez
+00:16:11.447 INFO  login.PeopleLoginController : adaLOGGED IN
+00:16:11.452 DEBUG main.People : CREATING Bob Blank
+00:16:11.453 DEBUG main.People : CREATING Joe Handsum
+00:16:11.453 DEBUG main.People : CREATING Jermey Lopez
+00:18:15.527 INFO  login.PeopleLoginController :  LOGGED IN
+00:18:15.533 DEBUG main.People : CREATING Bob Blank
+00:18:15.533 DEBUG main.People : CREATING Joe Handsum
+00:18:15.533 DEBUG main.People : CREATING Jermey Lopez
+00:18:23.616 INFO  list.PeopleListController : READING Jermey Lopez
+00:18:26.356 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+00:18:26.357 DEBUG main.People : CREATING Bob Blank
+00:18:26.357 DEBUG main.People : CREATING Joe Handsum
+00:18:26.357 DEBUG main.People : CREATING Jermey Lopez
+00:18:29.290 INFO  list.PeopleListController : READING Jermey Lopez
+00:18:30.478 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+00:18:30.479 DEBUG main.People : CREATING Bob Blank
+00:18:30.479 DEBUG main.People : CREATING Joe Handsum
+00:18:30.479 DEBUG main.People : CREATING Jermey Lopez
+00:19:05.275 INFO  login.PeopleLoginController : s LOGGED IN
+00:19:05.280 DEBUG main.People : CREATING Bob Blank
+00:19:05.280 DEBUG main.People : CREATING Joe Handsum
+00:19:05.281 DEBUG main.People : CREATING Jermey Lopez
+00:19:31.311 INFO  login.PeopleLoginController :  LOGGED IN
+00:19:31.317 DEBUG main.People : CREATING Bob Blank
+00:19:31.317 DEBUG main.People : CREATING Joe Handsum
+00:19:31.318 DEBUG main.People : CREATING Jermey Lopez
+00:19:32.313 DEBUG main.People : CREATING    
+00:19:56.795 INFO  login.PeopleLoginController :  LOGGED IN
+00:19:56.801 DEBUG main.People : CREATING Bob Blank
+00:19:56.802 DEBUG main.People : CREATING Joe Handsum
+00:19:56.802 DEBUG main.People : CREATING Jermey Lopez
+00:19:58.401 DEBUG main.People : CREATING  
+00:19:59.937 INFO  detail.PeopleDetailController : UPDATING  
+00:19:59.938 DEBUG main.People : CREATING Bob Blank
+00:19:59.938 DEBUG main.People : CREATING Joe Handsum
+00:19:59.938 DEBUG main.People : CREATING Jermey Lopez
+00:20:09.602 DEBUG main.People : CREATING  
+00:20:16.448 INFO  detail.PeopleDetailController : UPDATING  
+00:20:16.449 DEBUG main.People : CREATING Bob Blank
+00:20:16.449 DEBUG main.People : CREATING Joe Handsum
+00:20:16.449 DEBUG main.People : CREATING Jermey Lopez
+00:24:42.660 INFO  login.PeopleLoginController :  LOGGED IN
+00:24:42.665 DEBUG main.People : CREATING Bob Blank
+00:24:42.666 DEBUG main.People : CREATING Joe Handsum
+00:24:42.666 DEBUG main.People : CREATING Jermey Lopez
+00:24:47.010 INFO  list.PeopleListController : READING Jermey Lopez
+00:24:52.315 DEBUG main.People : CREATING Bob Blank
+00:24:52.315 DEBUG main.People : CREATING Joe Handsum
+00:24:52.315 DEBUG main.People : CREATING Jermey Lopez
+00:25:32.764 INFO  login.PeopleLoginController :  LOGGED IN
+00:25:32.769 DEBUG main.People : CREATING Bob Blank
+00:25:32.770 DEBUG main.People : CREATING Joe Handsum
+00:25:32.770 DEBUG main.People : CREATING Jermey Lopez
+00:25:34.916 INFO  list.PeopleListController : READING Jermey Lopez
+00:25:36.501 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+00:25:36.502 DEBUG main.People : CREATING Bob Blank
+00:25:36.502 DEBUG main.People : CREATING Joe Handsum
+00:25:36.502 DEBUG main.People : CREATING Jermey Lopez
+00:25:40.673 DEBUG main.People : CREATING  
+00:25:43.031 INFO  detail.PeopleDetailController : CREATING  
+00:25:43.031 DEBUG main.People : CREATING Bob Blank
+00:25:43.031 DEBUG main.People : CREATING Joe Handsum
+00:25:43.032 DEBUG main.People : CREATING Jermey Lopez
+00:25:45.505 DEBUG main.People : CREATING  
+00:25:47.345 INFO  detail.PeopleDetailController : CREATING  
+00:25:47.345 DEBUG main.People : CREATING Bob Blank
+00:25:47.346 DEBUG main.People : CREATING Joe Handsum
+00:25:47.346 DEBUG main.People : CREATING Jermey Lopez
+00:25:54.277 DEBUG main.People : CREATING  
+00:26:06.316 INFO  detail.PeopleDetailController : CREATING  
+00:26:06.317 DEBUG main.People : CREATING Bob Blank
+00:26:06.317 DEBUG main.People : CREATING Joe Handsum
+00:26:06.317 DEBUG main.People : CREATING Jermey Lopez
+00:26:19.845 ERROR list.PeopleListController : No target selected
+00:26:22.017 INFO  list.PeopleListController : DELETING Jermey Lopez
+00:28:11.666 INFO  login.PeopleLoginController :  LOGGED IN
+00:28:22.798 INFO  detail.PeopleDetailController : CREATING  
+00:29:49.358 INFO  login.PeopleLoginController : ada LOGGED IN
+00:29:56.641 INFO  detail.PeopleDetailController : CREATING aadass sas
+00:30:00.179 INFO  list.PeopleListController : READING Bob Blank
+00:30:02.468 INFO  detail.PeopleDetailController : UPDATING Bob Blank
+00:30:04.982 INFO  list.PeopleListController : READING Bob Blank
+00:30:07.698 INFO  detail.PeopleDetailController : CREATING Bob Blank
+00:30:11.026 ERROR list.PeopleListController : No target selected
+00:30:12.348 INFO  list.PeopleListController : DELETING Jermey Lopez
+00:33:43.576 INFO  list.PeopleListController : DELETING Jermey Lopez
+00:33:44.970 INFO  list.PeopleListController : READING Jermey Lopez
+00:33:47.902 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+18:07:24.638 INFO  login.PeopleLoginController : hello LOGGED IN
+18:10:48.256 INFO  login.PeopleLoginController : poopballs LOGGED IN
+18:50:55.083 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+18:50:55.188 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+18:50:55.189 INFO  login.PeopleLoginController : Session token: i am a session token
+18:50:55.195 INFO  login.PeopleLoginController : Fetch response: [{"id":1,"dogName":"Spot"},{"id":2,"dogName":"FIDO"},{"id":3,"dogName":"El Grande"}]
+18:50:55.202 INFO  login.PeopleLoginController : ragnar LOGGED IN
+18:51:49.104 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+18:51:49.219 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+18:51:49.220 INFO  login.PeopleLoginController : Session token: i am a session token
+18:51:49.226 INFO  login.PeopleLoginController : Fetch response: [{"id":1,"firstName":Adam,"lastName":Smith,"dateOfBirth":2016-08-16,"age":1}]
+18:51:49.234 INFO  login.PeopleLoginController : ragnar LOGGED IN
+18:51:57.542 ERROR list.PeopleListController : No target selected
+18:52:10.539 INFO  login.PeopleLoginController : credentials: {"password":"stupid","username":"dummb"}
+18:52:10.592 ERROR login.PeopleLoginController : Non-200 status code returned: HTTP/1.1 404 Not Found
+18:52:12.717 INFO  login.PeopleLoginController : credentials: {"password":"stupid","username":"dummb"}
+18:52:12.724 ERROR login.PeopleLoginController : Non-200 status code returned: HTTP/1.1 404 Not Found
+18:53:47.822 INFO  login.PeopleLoginController : credentials: {"password":"dumb","username":"poopy"}
+18:53:47.866 ERROR login.PeopleLoginController : Non-200 status code returned: HTTP/1.1 404 Not Found
+18:54:28.987 INFO  login.PeopleLoginController : credentials: {"password":"1234","username":"ragnar"}
+18:54:28.996 ERROR login.PeopleLoginController : Non-200 status code returned: HTTP/1.1 404 Not Found
+18:54:54.406 INFO  login.PeopleLoginController : credentials: {"password":"1234","username":"ragnar"}
+18:54:54.518 ERROR login.PeopleLoginController : I DON'T KNOW YOU!!!
+19:00:24.391 INFO  login.PeopleLoginController : credentials: {"password":"1234","username":"ragnar"}
+19:00:24.434 ERROR login.PeopleLoginController : I DON'T KNOW YOU!!!
+19:00:42.648 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+19:00:42.660 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+19:00:42.661 INFO  login.PeopleLoginController : Session token: i am a session token
+19:00:42.667 INFO  login.PeopleLoginController : Fetch response: [{"id":1,"firstName":Adam,"lastName":Smith,"dateOfBirth":2016-08-16,"age":1}]
+19:00:42.672 INFO  login.PeopleLoginController : ragnar LOGGED IN
+19:00:49.590 INFO  list.PeopleListController : READING Bob Blank
+19:00:54.637 INFO  detail.PeopleDetailController : UPDATING Bob Blank
+19:04:03.026 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+19:04:03.067 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+19:04:03.068 INFO  login.PeopleLoginController : Session token: i am a session token
+19:04:03.072 INFO  login.PeopleLoginController : Fetch response: [{"id":1,"firstName":Adam,"lastName":Smith,"dateOfBirth":2016-08-16,"age":1}]
+19:04:03.078 INFO  login.PeopleLoginController : ragnar LOGGED IN
+19:04:29.823 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+19:04:29.938 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+19:04:29.939 INFO  login.PeopleLoginController : Session token: i am a session token
+19:04:29.945 INFO  login.PeopleLoginController : Fetch response: [{"id":1,"firstName":Bob,"lastName":Blank,"dateOfBirth":2020-01-27,"age":1}, {"id":1,"firstName":Joe,"lastName":Handsum,"dateOfBirth":1950-03-12,"age":70}, {"id":1,"firstName":Jermey,"lastName":Lopez,"dateOfBirth":1996-07-15,"age":24}]
+19:04:29.951 INFO  login.PeopleLoginController : ragnar LOGGED IN
+19:22:20.617 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+19:22:20.664 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+19:22:20.665 INFO  login.PeopleLoginController : Session token: i am a session token
+19:22:20.665 INFO  login.PeopleLoginController : ragnar LOGGED IN
+19:26:12.907 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+19:26:12.951 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+19:26:12.952 INFO  login.PeopleLoginController : Session token: i am a session token
+19:26:12.952 INFO  login.PeopleLoginController : ragnar LOGGED IN
+19:54:51.559 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+19:54:51.607 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+19:54:51.649 INFO  login.PeopleLoginController : ragnar LOGGED IN
+20:00:28.506 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+20:00:28.562 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+20:00:28.587 INFO  login.PeopleLoginController : ragnar LOGGED IN
+20:01:44.446 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+20:01:44.488 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+20:01:44.500 INFO  login.PeopleLoginController : Session token: i am a session token
+20:01:44.500 INFO  login.PeopleLoginController : ragnar LOGGED IN
+20:02:47.769 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+20:02:47.809 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+20:02:47.821 INFO  login.PeopleLoginController : Session token: i am a session token
+20:02:47.821 INFO  login.PeopleLoginController : ragnar LOGGED IN
+20:04:04.825 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+20:04:04.946 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+20:04:04.960 INFO  login.PeopleLoginController : Session token: i am a session token
+20:04:04.961 INFO  login.PeopleLoginController : ragnar LOGGED IN
+20:04:41.665 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+20:04:41.709 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+20:04:41.720 INFO  login.PeopleLoginController : Session token: i am a session token
+20:04:41.721 INFO  login.PeopleLoginController : ragnar LOGGED IN
+20:22:03.421 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+20:22:03.465 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+20:22:03.467 INFO  login.PeopleLoginController : Session token: i am a session token
+20:22:03.468 INFO  login.PeopleLoginController : ragnar LOGGED IN
+20:22:37.292 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+20:22:37.333 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+20:22:37.335 INFO  login.PeopleLoginController : Session token: i am a session token
+20:22:37.336 INFO  login.PeopleLoginController : ragnar LOGGED IN
+20:22:40.273 INFO  list.PeopleListController : READING Bob Blank
+20:22:43.151 INFO  detail.PeopleDetailController : UPDATING Bob Blank
+20:22:44.049 ERROR list.PeopleListController : No target selected
+20:51:38.779 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+20:51:38.894 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+20:51:38.895 INFO  login.PeopleLoginController : Session token: i am a session token
+20:51:38.896 INFO  login.PeopleLoginController : ragnar LOGGED IN
+20:51:41.666 INFO  list.PeopleListController : READING Bob Blank
+20:51:44.616 INFO  detail.PeopleDetailController : UPDATING Bob Blank
+20:51:46.924 INFO  list.PeopleListController : READING Bob Blank
+20:51:52.029 INFO  detail.PeopleDetailController : UPDATING Bob Blank
+20:53:57.554 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+20:53:57.597 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+20:53:57.599 INFO  login.PeopleLoginController : Session token: i am a session token
+20:53:57.600 INFO  login.PeopleLoginController : ragnar LOGGED IN
+20:53:57.617 INFO  main.PeopleGateway : 200 response received
+20:54:00.406 INFO  list.PeopleListController : READING Bob Blank
+20:54:03.594 INFO  detail.PeopleDetailController : UPDATING Bob Blank
+20:54:03.601 INFO  main.PeopleGateway : 200 response received
+20:54:05.737 INFO  list.PeopleListController : READING Bob Blank
+20:54:08.399 INFO  detail.PeopleDetailController : UPDATING Bob Blank
+20:54:08.409 INFO  main.PeopleGateway : 200 response received
+20:54:10.606 INFO  list.PeopleListController : READING Joe Handsum
+20:54:12.402 INFO  main.PeopleGateway : 200 response received
+21:06:10.297 INFO  login.PeopleLoginController : credentials: {"password":"","username":""}
+21:06:10.351 ERROR login.PeopleLoginController : Non-200 status code returned: HTTP/1.1 404 Not Found
+21:06:19.256 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+21:06:19.263 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+21:06:19.265 INFO  login.PeopleLoginController : Session token: i am a session token
+21:06:19.265 INFO  login.PeopleLoginController : ragnar LOGGED IN
+21:06:19.281 INFO  main.PeopleGateway : 200 response received
+21:06:25.317 INFO  list.PeopleListController : READING Bob Blank
+21:06:29.529 INFO  detail.PeopleDetailController : UPDATING Bob Blank
+21:06:29.534 INFO  main.PeopleGateway : 200 response received
+21:06:29.544 INFO  main.PeopleGateway : 200 response received
+21:20:10.763 INFO  login.PeopleLoginController : credentials: {"password":"f;apjacks","username":"rangar"}
+21:20:10.885 ERROR login.PeopleLoginController : Non-200 status code returned: HTTP/1.1 404 Not Found
+21:20:12.785 INFO  login.PeopleLoginController : credentials: {"password":"f;apjack","username":"rangar"}
+21:20:12.794 ERROR login.PeopleLoginController : Non-200 status code returned: HTTP/1.1 404 Not Found
+21:20:19.539 INFO  login.PeopleLoginController : credentials: {"password":"flapjack","username":"rangar"}
+21:20:19.547 ERROR login.PeopleLoginController : Non-200 status code returned: HTTP/1.1 404 Not Found
+21:20:21.335 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"rangar"}
+21:20:21.343 ERROR login.PeopleLoginController : Non-200 status code returned: HTTP/1.1 404 Not Found
+21:20:49.425 INFO  login.PeopleLoginController : credentials: {"password":"flapjacksflapjacks","username":"rangar"}
+21:20:49.438 ERROR login.PeopleLoginController : Non-200 status code returned: HTTP/1.1 404 Not Found
+21:20:55.911 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"rangar"}
+21:20:55.918 ERROR login.PeopleLoginController : Non-200 status code returned: HTTP/1.1 404 Not Found
+21:21:50.130 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+21:21:50.179 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+21:21:50.181 INFO  login.PeopleLoginController : Session token: i am a session token
+21:21:50.182 INFO  login.PeopleLoginController : ragnar LOGGED IN
+21:21:50.200 INFO  main.PeopleGateway : 200 response received
+21:21:53.645 INFO  main.PeopleGateway : 200 response received
+21:21:53.646 INFO  list.PeopleListController : DELETING Bob Blank
+21:21:58.973 INFO  list.PeopleListController : READING Bob Blank
+21:22:01.764 INFO  main.PeopleGateway : 200 response received
+21:22:06.738 INFO  detail.PeopleDetailController : CREATING t 
+21:22:06.746 INFO  main.PeopleGateway : 200 response received
+21:22:06.753 INFO  main.PeopleGateway : 200 response received
+21:22:18.148 INFO  list.PeopleListController : READING Bob Blank
+21:22:21.883 INFO  detail.PeopleDetailController : UPDATING Bob Blank
+21:22:21.887 INFO  main.PeopleGateway : 200 response received
+21:22:21.894 INFO  main.PeopleGateway : 200 response received
+21:22:30.500 INFO  main.PeopleGateway : 200 response received
+21:22:30.501 INFO  list.PeopleListController : DELETING Joe Handsum
+21:22:33.554 INFO  main.PeopleGateway : 200 response received
+21:22:33.555 INFO  list.PeopleListController : DELETING Joe Handsum
+21:22:47.855 INFO  login.PeopleLoginController : credentials: {"password":"","username":"te"}
+21:22:47.900 ERROR login.PeopleLoginController : Non-200 status code returned: HTTP/1.1 404 Not Found
+21:22:52.462 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+21:22:52.468 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+21:22:52.470 INFO  login.PeopleLoginController : Session token: i am a session token
+21:22:52.470 INFO  login.PeopleLoginController : ragnar LOGGED IN
+21:22:52.486 INFO  main.PeopleGateway : 200 response received
+21:22:56.548 INFO  list.PeopleListController : READING Jermey Lopez
+21:22:58.699 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+21:22:58.703 INFO  main.PeopleGateway : 200 response received
+21:22:58.712 INFO  main.PeopleGateway : 200 response received
+21:49:15.323 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+21:49:15.364 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+21:49:15.366 INFO  login.PeopleLoginController : Session token: i am a session token
+21:49:15.367 INFO  login.PeopleLoginController : ragnar LOGGED IN
+21:49:15.390 INFO  main.PeopleGateway : 200 response received
+21:49:55.580 ERROR detail.PeopleDetailController : DOB is after Today
+21:55:04.613 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+21:55:04.657 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+21:55:04.659 INFO  login.PeopleLoginController : Session token: i am a session token
+21:55:04.660 INFO  login.PeopleLoginController : ragnar LOGGED IN
+21:55:04.676 INFO  main.PeopleGateway : 200 response received
+21:55:09.871 INFO  main.PeopleGateway : 200 response received
+21:55:09.872 INFO  list.PeopleListController : DELETING Bob Blank
+21:55:10.823 INFO  list.PeopleListController : READING Bob Blank
+21:55:12.141 INFO  detail.PeopleDetailController : UPDATING Bob Blank
+21:55:12.145 INFO  main.PeopleGateway : 200 response received
+21:55:12.152 INFO  main.PeopleGateway : 200 response received
+21:55:19.411 INFO  detail.PeopleDetailController : CREATING a a
+21:55:19.415 INFO  main.PeopleGateway : 200 response received
+21:55:19.422 INFO  main.PeopleGateway : 200 response received
+21:55:37.022 INFO  detail.PeopleDetailController : CREATING a a
+21:55:37.027 INFO  main.PeopleGateway : 200 response received
+21:55:37.033 INFO  main.PeopleGateway : 200 response received
+21:56:53.520 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+21:56:53.563 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+21:56:53.565 INFO  login.PeopleLoginController : Session token: i am a session token
+21:56:53.566 INFO  login.PeopleLoginController : ragnar LOGGED IN
+21:56:53.583 INFO  main.PeopleGateway : 200 response received
+21:57:01.677 INFO  detail.PeopleDetailController : CREATING a a
+21:57:01.681 INFO  main.PeopleGateway : 200 response received
+21:57:01.688 INFO  main.PeopleGateway : 200 response received
+22:00:31.801 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:00:31.844 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:00:31.846 INFO  login.PeopleLoginController : Session token: i am a session token
+22:00:31.847 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:00:31.864 INFO  main.PeopleGateway : 200 response received
+22:00:34.283 INFO  main.PeopleGateway : 200 response received
+22:00:34.284 INFO  list.PeopleListController : DELETING Bob Blank
+22:00:38.156 INFO  main.PeopleGateway : 200 response received
+22:00:38.157 INFO  list.PeopleListController : DELETING Joe Handsum
+22:01:38.836 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:01:38.878 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:01:38.880 INFO  login.PeopleLoginController : Session token: i am a session token
+22:01:38.881 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:01:38.898 INFO  main.PeopleGateway : 200 response received
+22:01:41.299 INFO  main.PeopleGateway : 200 response received
+22:01:41.300 INFO  list.PeopleListController : DELETING Bob Blank
+22:01:43.742 INFO  list.PeopleListController : READING Bob Blank
+22:01:45.785 INFO  detail.PeopleDetailController : UPDATING Bob Blank
+22:01:45.789 INFO  main.PeopleGateway : 200 response received
+22:01:45.796 INFO  main.PeopleGateway : 200 response received
+22:01:49.443 INFO  list.PeopleListController : READING Bob Blank
+22:01:53.610 INFO  detail.PeopleDetailController : UPDATING Bob Blank
+22:01:53.615 INFO  main.PeopleGateway : 200 response received
+22:01:53.622 INFO  main.PeopleGateway : 200 response received
+22:02:04.550 INFO  main.PeopleGateway : 200 response received
+22:02:04.551 INFO  list.PeopleListController : DELETING Jermey Lopez
+22:02:10.928 INFO  list.PeopleListController : READING Jermey Lopez
+22:02:14.752 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+22:02:14.757 INFO  main.PeopleGateway : 200 response received
+22:02:14.763 INFO  main.PeopleGateway : 200 response received
+22:02:17.463 INFO  list.PeopleListController : READING Jermey Lopez
+22:02:18.841 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+22:02:18.846 INFO  main.PeopleGateway : 200 response received
+22:02:18.852 INFO  main.PeopleGateway : 200 response received
+22:02:19.973 INFO  list.PeopleListController : READING Bob Blank
+22:02:20.402 INFO  detail.PeopleDetailController : UPDATING Bob Blank
+22:02:20.406 INFO  main.PeopleGateway : 200 response received
+22:02:20.412 INFO  main.PeopleGateway : 200 response received
+22:02:21.653 INFO  main.PeopleGateway : 200 response received
+22:02:21.654 ERROR list.PeopleListController : No target selected
+22:02:29.910 ERROR detail.PeopleDetailController : First Name length error
+22:02:31.785 ERROR detail.PeopleDetailController : Last Name length error
+22:02:33.513 ERROR detail.PeopleDetailController : DOB is after Today
+22:02:36.798 INFO  main.PeopleGateway : 200 response received
+22:04:14.934 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:04:14.976 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:04:14.978 INFO  login.PeopleLoginController : Session token: i am a session token
+22:04:14.979 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:04:14.995 INFO  main.PeopleGateway : 200 response received
+22:04:17.301 INFO  list.PeopleListController : READING Bob Blank
+22:04:19.694 INFO  detail.PeopleDetailController : UPDATING Bob Blank
+22:04:19.698 INFO  main.PeopleGateway : 200 response received
+22:04:19.705 INFO  main.PeopleGateway : 200 response received
+22:04:21.519 INFO  list.PeopleListController : READING Joe Handsum
+22:04:24.766 ERROR detail.PeopleDetailController : DOB is after Today
+22:04:26.756 INFO  main.PeopleGateway : 200 response received
+22:10:00.907 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:10:00.949 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:10:00.951 INFO  login.PeopleLoginController : Session token: i am a session token
+22:10:00.952 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:10:00.968 INFO  main.PeopleGateway : 200 response received
+22:10:10.491 INFO  detail.PeopleDetailController : CREATING a a
+22:10:10.497 INFO  main.PeopleGateway : 200 response received
+22:13:28.798 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:13:28.841 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:13:28.843 INFO  login.PeopleLoginController : Session token: i am a session token
+22:13:28.844 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:13:28.860 INFO  main.PeopleGateway : 200 response received
+22:13:36.317 INFO  list.PeopleListController : READING Bob Blank
+22:13:38.166 INFO  detail.PeopleDetailController : UPDATING Bob Blank
+22:13:38.170 INFO  main.PeopleGateway : 200 response received
+22:13:38.177 INFO  main.PeopleGateway : 200 response received
+22:13:44.544 INFO  detail.PeopleDetailController : CREATING a a
+22:13:44.549 INFO  main.PeopleGateway : 200 response received
+22:14:36.055 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:14:36.098 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:14:36.099 INFO  login.PeopleLoginController : Session token: i am a session token
+22:14:36.100 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:14:36.117 INFO  main.PeopleGateway : 200 response received
+22:14:39.426 INFO  detail.PeopleDetailController : CREATING a a
+22:14:39.431 INFO  main.PeopleGateway : 200 response received
+22:15:51.853 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:15:51.970 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:15:51.971 INFO  login.PeopleLoginController : Session token: i am a session token
+22:15:51.972 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:15:51.992 INFO  main.PeopleGateway : 200 response received
+22:15:56.010 INFO  detail.PeopleDetailController : CREATING a a
+22:15:56.017 INFO  main.PeopleGateway : 200 response received
+22:21:43.003 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:21:43.054 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:21:43.056 INFO  login.PeopleLoginController : Session token: i am a session token
+22:21:43.057 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:21:43.075 INFO  main.PeopleGateway : 200 response received
+22:21:46.057 INFO  detail.PeopleDetailController : CREATING a a
+22:21:46.062 ERROR main.PeopleGateway : non-200 response received
+22:23:15.198 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:23:15.239 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:23:15.242 INFO  login.PeopleLoginController : Session token: i am a session token
+22:23:15.242 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:23:15.259 INFO  main.PeopleGateway : 200 response received
+22:23:18.032 INFO  detail.PeopleDetailController : CREATING a a
+22:23:18.037 ERROR main.PeopleGateway : non-200 response received
+22:24:20.773 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:24:20.889 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:24:20.891 INFO  login.PeopleLoginController : Session token: i am a session token
+22:24:20.892 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:24:20.911 INFO  main.PeopleGateway : 200 response received
+22:24:23.394 INFO  detail.PeopleDetailController : CREATING a a
+22:24:23.402 INFO  main.PeopleGateway : 200 response received
+22:25:43.727 INFO  main.PeopleGateway : 200 response received
+22:26:00.471 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:26:00.516 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:26:00.518 INFO  login.PeopleLoginController : Session token: i am a session token
+22:26:00.519 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:26:00.537 INFO  main.PeopleGateway : 200 response received
+22:26:02.795 INFO  detail.PeopleDetailController : CREATING a a
+22:26:02.799 INFO  main.PeopleGateway : 200 response received
+22:26:40.444 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:26:40.485 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:26:40.487 INFO  login.PeopleLoginController : Session token: i am a session token
+22:26:40.488 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:26:40.510 INFO  main.PeopleGateway : 200 response received
+22:26:43.156 INFO  detail.PeopleDetailController : CREATING a a
+22:26:43.161 INFO  main.PeopleGateway : 200 response received
+22:28:49.743 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:28:49.785 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:28:49.787 INFO  login.PeopleLoginController : Session token: i am a session token
+22:28:49.788 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:28:49.806 INFO  main.PeopleGateway : 200 response received
+22:28:52.493 INFO  detail.PeopleDetailController : CREATING a a
+22:28:52.498 INFO  main.PeopleGateway : 200 response received
+22:30:02.680 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:30:02.722 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:30:02.724 INFO  login.PeopleLoginController : Session token: i am a session token
+22:30:02.725 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:30:02.742 INFO  main.PeopleGateway : 200 response received
+22:30:05.403 INFO  detail.PeopleDetailController : CREATING a a
+22:30:05.411 INFO  main.PeopleGateway : 200 response received
+22:33:38.384 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:33:38.427 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:33:38.429 INFO  login.PeopleLoginController : Session token: i am a session token
+22:33:38.430 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:33:38.449 INFO  main.PeopleGateway : 200 response received
+22:33:40.777 ERROR main.PeopleGateway : non-200 response received
+22:33:40.778 ERROR list.PeopleListController : No target selected
+22:33:43.469 ERROR main.PeopleGateway : non-200 response received
+22:33:43.469 ERROR list.PeopleListController : No target selected
+22:34:52.155 ERROR main.PeopleGateway : non-200 response received
+22:34:52.155 ERROR list.PeopleListController : No target selected
+22:35:18.439 INFO  list.PeopleListController : READING Jermey Lopez
+22:35:22.731 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+22:35:22.736 ERROR main.PeopleGateway : non-200 response received
+22:36:25.179 INFO  main.PeopleGateway : 200 response received
+22:36:27.631 INFO  list.PeopleListController : READING Joe Handsum
+22:36:28.074 INFO  detail.PeopleDetailController : UPDATING Joe Handsum
+22:36:28.079 ERROR main.PeopleGateway : non-200 response received
+22:36:29.537 INFO  detail.PeopleDetailController : UPDATING Joe Handsum
+22:36:29.541 ERROR main.PeopleGateway : non-200 response received
+22:38:35.585 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:38:35.626 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:38:35.628 INFO  login.PeopleLoginController : Session token: i am a session token
+22:38:35.629 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:38:35.648 INFO  main.PeopleGateway : 200 response received
+22:38:38.057 INFO  list.PeopleListController : READING Jermey Lopez
+22:38:39.332 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+22:38:39.336 ERROR main.PeopleGateway : non-200 response received
+22:41:25.698 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:41:25.745 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:41:25.748 INFO  login.PeopleLoginController : Session token: i am a session token
+22:41:25.749 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:41:25.765 INFO  main.PeopleGateway : 200 response received
+22:41:27.736 INFO  list.PeopleListController : READING Jermey Lopez
+22:41:28.289 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+22:41:28.294 ERROR main.PeopleGateway : non-200 response received
+22:42:35.659 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:42:35.701 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:42:35.703 INFO  login.PeopleLoginController : Session token: i am a session token
+22:42:35.704 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:42:35.719 INFO  main.PeopleGateway : 200 response received
+22:42:38.108 INFO  list.PeopleListController : READING Jermey Lopez
+22:42:38.881 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+22:42:38.885 ERROR main.PeopleGateway : non-200 response received
+22:43:19.355 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:43:19.396 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:43:19.398 INFO  login.PeopleLoginController : Session token: i am a session token
+22:43:19.399 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:43:19.416 INFO  main.PeopleGateway : 200 response received
+22:43:21.568 INFO  list.PeopleListController : READING Bob Blank
+22:43:22.131 INFO  detail.PeopleDetailController : UPDATING Bob Blank
+22:43:22.135 ERROR main.PeopleGateway : non-200 response received
+22:44:16.936 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:44:16.977 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:44:16.979 INFO  login.PeopleLoginController : Session token: i am a session token
+22:44:16.980 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:44:16.995 INFO  main.PeopleGateway : 200 response received
+22:44:18.773 INFO  list.PeopleListController : READING Joe Handsum
+22:44:20.088 INFO  detail.PeopleDetailController : UPDATING Joe Handsum
+22:44:20.093 ERROR main.PeopleGateway : non-200 response received
+22:55:49.256 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:55:49.297 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:55:49.299 INFO  login.PeopleLoginController : Session token: i am a session token
+22:55:49.300 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:55:49.316 INFO  main.PeopleGateway : 200 response received
+22:55:51.437 INFO  list.PeopleListController : READING Jermey Lopez
+22:55:52.574 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+22:55:52.579 ERROR main.PeopleGateway : non-200 response received
+22:59:10.832 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+22:59:10.876 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+22:59:10.878 INFO  login.PeopleLoginController : Session token: i am a session token
+22:59:10.879 INFO  login.PeopleLoginController : ragnar LOGGED IN
+22:59:10.896 INFO  main.PeopleGateway : 200 response received
+22:59:12.895 INFO  list.PeopleListController : READING Jermey Lopez
+22:59:13.359 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+22:59:13.363 ERROR main.PeopleGateway : non-200 response received
+23:01:39.652 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+23:01:39.776 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+23:01:39.778 INFO  login.PeopleLoginController : Session token: i am a session token
+23:01:39.779 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:01:39.797 INFO  main.PeopleGateway : 200 response received
+23:01:41.522 INFO  list.PeopleListController : READING Jermey Lopez
+23:01:42.139 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+23:01:42.146 ERROR main.PeopleGateway : non-200 response received
+23:06:43.914 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+23:06:44.032 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+23:06:44.035 INFO  login.PeopleLoginController : Session token: i am a session token
+23:06:44.036 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:06:44.055 INFO  main.PeopleGateway : 200 response received
+23:06:46.030 INFO  list.PeopleListController : READING Bob Blank
+23:06:46.757 INFO  detail.PeopleDetailController : UPDATING Bob Blank
+23:06:46.764 INFO  main.PeopleGateway : 200 response received
+23:06:46.799 ERROR main.PeopleGateway : non-200 response received
+23:09:10.956 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+23:09:10.997 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+23:09:10.999 INFO  login.PeopleLoginController : Session token: i am a session token
+23:09:11.000 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:09:11.017 INFO  main.PeopleGateway : 200 response received
+23:09:13.927 INFO  list.PeopleListController : READING Bob Blank
+23:09:14.524 INFO  detail.PeopleDetailController : UPDATING Bob Blank
+23:09:14.529 INFO  main.PeopleGateway : 200 response received
+23:09:14.540 ERROR main.PeopleGateway : non-200 response received
+23:13:01.794 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+23:13:01.836 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+23:13:01.838 INFO  login.PeopleLoginController : Session token: i am a session token
+23:13:01.839 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:13:01.856 INFO  main.PeopleGateway : 200 response received
+23:13:05.892 INFO  list.PeopleListController : READING Jermey Lopez
+23:13:06.497 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+23:13:06.503 INFO  main.PeopleGateway : 200 response received
+23:14:28.948 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+23:14:29.003 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+23:14:29.005 INFO  login.PeopleLoginController : Session token: i am a session token
+23:14:29.006 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:14:29.023 INFO  main.PeopleGateway : 200 response received
+23:14:30.686 INFO  list.PeopleListController : READING Bob Blank
+23:14:31.544 INFO  detail.PeopleDetailController : UPDATING Bob Blank
+23:14:31.549 INFO  main.PeopleGateway : 200 response received
+23:17:56.439 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+23:17:56.482 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+23:17:56.484 INFO  login.PeopleLoginController : Session token: i am a session token
+23:17:56.485 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:17:56.500 INFO  main.PeopleGateway : 200 response received
+23:17:58.040 INFO  list.PeopleListController : READING Jermey Lopez
+23:17:58.460 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+23:17:58.464 INFO  main.PeopleGateway : 200 response received
+23:18:50.297 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+23:18:50.413 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+23:18:50.415 INFO  login.PeopleLoginController : Session token: i am a session token
+23:18:50.416 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:18:50.436 INFO  main.PeopleGateway : 200 response received
+23:18:52.444 INFO  list.PeopleListController : READING Jermey Lopez
+23:18:53.271 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+23:18:53.278 INFO  main.PeopleGateway : 200 response received
+23:18:53.316 ERROR main.PeopleGateway : non-200 response received
+23:20:04.315 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+23:20:04.362 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+23:20:04.365 INFO  login.PeopleLoginController : Session token: i am a session token
+23:20:04.366 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:20:04.382 INFO  main.PeopleGateway : 200 response received
+23:20:05.724 INFO  list.PeopleListController : READING Jermey Lopez
+23:20:06.319 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+23:20:06.323 INFO  main.PeopleGateway : 200 response received
+23:20:06.335 ERROR main.PeopleGateway : non-200 response received
+23:23:53.323 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+23:23:53.368 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+23:23:53.371 INFO  login.PeopleLoginController : Session token: i am a session token
+23:23:53.372 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:23:53.388 INFO  main.PeopleGateway : 200 response received
+23:23:55.099 INFO  list.PeopleListController : READING Jermey Lopez
+23:23:55.799 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+23:23:55.803 INFO  main.PeopleGateway : 200 response received
+23:23:55.813 ERROR main.PeopleGateway : non-200 response received
+23:25:48.008 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+23:25:48.050 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+23:25:48.052 INFO  login.PeopleLoginController : Session token: i am a session token
+23:25:48.053 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:25:48.070 INFO  main.PeopleGateway : 200 response received
+23:25:49.814 INFO  list.PeopleListController : READING Jermey Lopez
+23:25:50.506 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+23:25:50.516 ERROR main.PeopleGateway : non-200 response received
+23:26:45.487 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+23:26:45.529 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+23:26:45.531 INFO  login.PeopleLoginController : Session token: i am a session token
+23:26:45.532 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:26:45.548 INFO  main.PeopleGateway : 200 response received
+23:26:47.278 INFO  list.PeopleListController : READING Jermey Lopez
+23:26:47.799 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+23:26:47.806 INFO  main.PeopleGateway : 200 response received
+23:27:11.390 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+23:27:11.431 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+23:27:11.434 INFO  login.PeopleLoginController : Session token: i am a session token
+23:27:11.435 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:27:11.456 INFO  main.PeopleGateway : 200 response received
+23:27:13.276 INFO  list.PeopleListController : READING Jermey Lopez
+23:27:13.860 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+23:27:13.867 INFO  main.PeopleGateway : 200 response received
+23:27:15.886 INFO  list.PeopleListController : READING Joe Handsum
+23:27:16.284 INFO  detail.PeopleDetailController : UPDATING Joe Handsum
+23:27:16.290 INFO  main.PeopleGateway : 200 response received
+23:27:36.060 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+23:27:36.101 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+23:27:36.104 INFO  login.PeopleLoginController : Session token: i am a session token
+23:27:36.104 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:27:36.121 INFO  main.PeopleGateway : 200 response received
+23:27:37.806 INFO  list.PeopleListController : READING Jermey Lopez
+23:27:38.552 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+23:27:38.562 ERROR main.PeopleGateway : non-200 response received
+23:29:36.309 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+23:29:36.353 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+23:29:36.354 INFO  login.PeopleLoginController : Session token: i am a session token
+23:29:36.355 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:29:36.371 INFO  main.PeopleGateway : 200 response received
+23:29:37.925 INFO  list.PeopleListController : READING Jermey Lopez
+23:29:38.400 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+23:29:38.407 INFO  main.PeopleGateway : 200 response received
+23:29:42.289 INFO  list.PeopleListController : READING Joe Handsum
+23:29:42.653 INFO  detail.PeopleDetailController : UPDATING Joe Handsum
+23:29:42.659 INFO  main.PeopleGateway : 200 response received
+23:30:34.054 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+23:30:34.099 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+23:30:34.101 INFO  login.PeopleLoginController : Session token: i am a session token
+23:30:34.102 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:30:34.119 INFO  main.PeopleGateway : 200 response received
+23:30:36.318 INFO  list.PeopleListController : READING Jermey Lopez
+23:30:37.082 INFO  detail.PeopleDetailController : UPDATING Jermey Lopez
+23:30:37.086 INFO  main.PeopleGateway : 200 response received
+23:30:37.093 INFO  main.PeopleGateway : 200 response received
+23:30:40.032 INFO  main.PeopleGateway : 200 response received
+23:30:40.033 INFO  list.PeopleListController : DELETING Jermey Lopez
+23:30:48.793 INFO  main.PeopleGateway : 200 response received
+23:30:48.794 INFO  list.PeopleListController : DELETING Jermey Lopez
+23:30:52.420 INFO  list.PeopleListController : READING Joe Handsum
+23:30:54.785 INFO  detail.PeopleDetailController : UPDATING Joe Handsum
+23:30:54.789 INFO  main.PeopleGateway : 200 response received
+23:30:54.795 INFO  main.PeopleGateway : 200 response received
+23:31:02.752 INFO  detail.PeopleDetailController : CREATING a a
+23:31:02.760 ERROR main.PeopleGateway : non-200 response received
+23:33:19.399 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+23:33:19.518 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+23:33:19.520 INFO  login.PeopleLoginController : Session token: i am a session token
+23:33:19.521 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:33:19.540 INFO  main.PeopleGateway : 200 response received
+23:33:23.242 INFO  detail.PeopleDetailController : CREATING a a
+23:33:23.250 INFO  main.PeopleGateway : 200 response received
+23:34:30.187 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+23:34:30.230 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+23:34:30.232 INFO  login.PeopleLoginController : Session token: i am a session token
+23:34:30.233 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:34:30.251 INFO  main.PeopleGateway : 200 response received
+23:34:33.483 INFO  detail.PeopleDetailController : CREATING a a
+23:34:33.491 INFO  main.PeopleGateway : 200 response received
+23:34:33.499 INFO  main.PeopleGateway : 200 response received
+23:34:46.551 INFO  login.PeopleLoginController : credentials: {"password":"a","username":"a"}
+23:34:46.611 ERROR login.PeopleLoginController : Non-200 status code returned: HTTP/1.1 404 Not Found
+23:34:51.449 INFO  login.PeopleLoginController : credentials: {"password":"1234","username":"ragnar"}
+23:34:51.454 ERROR login.PeopleLoginController : I DON'T KNOW YOU!!!
+23:34:56.734 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+23:34:56.740 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+23:34:56.742 INFO  login.PeopleLoginController : Session token: i am a session token
+23:34:56.742 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:34:56.765 INFO  main.PeopleGateway : 200 response received
+23:34:59.528 INFO  main.PeopleGateway : 200 response received
+23:35:01.371 INFO  main.PeopleGateway : 200 response received
+23:35:01.373 INFO  list.PeopleListController : DELETING Jermey Lopez
+23:35:04.986 INFO  main.PeopleGateway : 200 response received
+23:35:04.986 INFO  list.PeopleListController : DELETING Jermey Lopez
+23:41:42.656 INFO  login.PeopleLoginController : credentials: {"password":"1234","username":"ragnar"}
+23:41:42.701 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:45:03.936 INFO  login.PeopleLoginController : credentials: {"password":"1234","username":"ragnar"}
+23:45:03.997 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:45:09.384 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+23:45:09.394 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+23:45:09.396 INFO  login.PeopleLoginController : Session token: i am a session token
+23:45:09.396 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:45:09.403 INFO  main.PeopleGateway : 200 response received
+23:47:06.892 INFO  login.PeopleLoginController : credentials: {"password":"1234","username":"ragnar"}
+23:47:08.396 ERROR login.PeopleLoginController : I DON'T KNOW YOU!!!
+23:47:56.923 INFO  login.PeopleLoginController : credentials: {"password":"1234","username":"ragnar"}
+23:47:59.287 ERROR login.PeopleLoginController : I DON'T KNOW YOU!!!
+23:48:02.075 INFO  login.PeopleLoginController : credentials: {"password":"flapjacks","username":"ragnar"}
+23:48:02.080 INFO  login.PeopleLoginController : Login response as a string: {"session_id":"i am a session token"}
+23:48:02.082 INFO  login.PeopleLoginController : Session token: i am a session token
+23:48:02.083 INFO  login.PeopleLoginController : ragnar LOGGED IN
+23:48:02.098 INFO  main.PeopleGateway : 200 response received
+23:48:06.417 INFO  detail.PeopleDetailController : CREATING a a
+23:48:06.421 INFO  main.PeopleGateway : 200 response received
+23:48:06.428 INFO  main.PeopleGateway : 200 response received
+23:48:10.083 INFO  list.PeopleListController : READING Bob Blank
+23:48:15.563 INFO  detail.PeopleDetailController : UPDATING Bob Blank
+23:48:15.568 INFO  main.PeopleGateway : 200 response received
+23:48:15.575 INFO  main.PeopleGateway : 200 response received
+23:48:18.289 INFO  list.PeopleListController : READING Joe Handsum
+23:48:19.071 INFO  detail.PeopleDetailController : UPDATING Joe Handsum
+23:48:19.075 INFO  main.PeopleGateway : 200 response received
+23:48:19.081 INFO  main.PeopleGateway : 200 response received

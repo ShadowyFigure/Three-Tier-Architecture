@@ -1,0 +1,10 @@
+Main\ViewType.class
+Main\People.class
+Main\ViewSwitcher.class
+Main\list\PeopleListController.class
+Main\detail\PeopleDetailController.class
+Main\PeopleGateway.class
+Main\PeopleException.class
+Main\login\PeopleLoginController.class
+Main\PeopleParameters.class
+Main\ViewSwitcher$1.class

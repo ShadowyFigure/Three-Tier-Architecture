@@ -1,0 +1,20 @@
+{
+  "request": {
+    "method": "PUT",
+    "url": "/people/1",
+    "headers" : {
+      "Authorization" : {
+        "contains" : "i am a sesh token"
+      },
+      "Body" : {
+        "contains" : "[{\"id\":1,\"firstName\":Bobby}]"
+      }
+    }
+  },
+  "response": {
+    "status": 401,
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
