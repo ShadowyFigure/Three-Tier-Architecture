@@ -5,24 +5,13 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-public class Main extends Application {
+@SpringBootApplication
+public class Main {
 
     public static void main(String[] args) {
-        launch(args);
-
+        Application.launch(main.JavaFxApplication.class, args);
     }
-
-    @Override
-    public void start(Stage stage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/mainview.fxml"));
-        loader.setController(ViewSwitcher.getInstance());
-        Parent rootNode = loader.load();
-        Scene scene = new Scene(rootNode);
-        stage.setScene(scene);
-        stage.setTitle("My Assign1 Demo");
-        stage.show();
-
-    }
-
 }

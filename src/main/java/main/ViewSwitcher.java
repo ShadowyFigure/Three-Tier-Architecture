@@ -44,7 +44,7 @@ public class ViewSwitcher implements Initializable {
                     break;
 
                 case PeopleDetailView:
-                    loader = new FXMLLoader(ViewSwitcher.class.getResource("/peopledetailview.fxml"));
+                    loader = new FXMLLoader(ViewSwitcher.class.getResource("/peopledetailview2.fxml"));
                     loader.setController(new PeopleDetailController(PeopleParameters.getPeopleParm()));
                     break;
 

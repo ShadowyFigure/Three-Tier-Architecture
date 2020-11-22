@@ -20,15 +20,18 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.sql.Connection;
 
 
 public class PeopleGateway {
     private String wsURL;
     private String sessionId;
     private String response;
+    private Connection connection;
     private static Logger logger = LogManager.getLogger();
 
-    public PeopleGateway(String url, String sessionId){
+    public PeopleGateway(String url, String sessionId, Connection connection){
+        this.connection = connection;
         this.sessionId = sessionId;
         this.wsURL = url;
     }
@@ -48,14 +51,14 @@ public class PeopleGateway {
         }
     }
 
-    public void insertPerson(){
+    public void insertPerson(JSONObject passJson){
         try {
             // we know this is a GET request so create a get request and pass it to getResponseAsString
             // build the request
             HttpPost request = new HttpPost(wsURL);
             // specify Authorization header
             request.setHeader("Authorization", sessionId);
-            request.setHeader("Body", "[{\"id\":1,\"firstName\":Doug, \"lastName\":Smith,\"dateOfBirth\":2000-01-03,\"age\":20,}]");
+            request.setHeader("Body", passJson.toString());
 
             response = waitForResponseAsString(request);
 
@@ -64,14 +67,14 @@ public class PeopleGateway {
         }
     }
 
-    public void updatePerson(){
+    public void updatePerson(JSONObject passJson){
         try {
             // we know this is a GET request so create a get request and pass it to getResponseAsString
             // build the request
             HttpPut putRequest = new HttpPut(wsURL);
             // specify Authorization header
             putRequest.setHeader("Authorization", sessionId);
-            putRequest.setHeader("Body", "[{\"id\":1,\"firstName\":Bobby}]");
+            putRequest.setHeader("Body", passJson.toString());
 
             response = waitForResponseAsString(putRequest);
 
@@ -102,6 +105,30 @@ public class PeopleGateway {
         }
 
         return peoples;
+    }
+
+    public ArrayList<Audit> getAudit() {
+        ArrayList<Audit> audit = new ArrayList<Audit>();
+
+        try {
+            // we know this is a GET request so create a get request and pass it to getResponseAsString
+            // build the request
+            HttpGet request = new HttpGet(wsURL);
+            // specify Authorization header
+            request.setHeader("Authorization", sessionId);
+
+            response = waitForResponseAsString(request);
+
+            for(Object obj : new JSONArray(response)) {
+                JSONObject jsonObject = (JSONObject) obj;
+                java.sql.Timestamp timeStamp = java.sql.Timestamp.valueOf(jsonObject.getString("when_occurred"));
+                audit.add(new Audit(jsonObject.getString("change_msg"), jsonObject.getString("changed_by"), timeStamp, jsonObject.getInt("person_id")));
+            }
+        } catch (Exception e) {
+            throw new PeopleException(e);
+        }
+
+        return audit;
     }
 
     private String waitForResponseAsString(HttpRequestBase request) throws IOException {

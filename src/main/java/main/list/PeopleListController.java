@@ -62,7 +62,7 @@ public class PeopleListController implements Initializable{
         try {
             PeopleParameters.setPeopleParm(peopleListView.getSelectionModel().getSelectedItem());
             myGateway = PeopleLoginController.getGateway();
-            myGateway.setWsURL("http://localhost:8080"+"/people/1");
+            myGateway.setWsURL("http://localhost:8080"+"/people/" + peopleListView.getSelectionModel().getSelectedItem().getId());
             myGateway.deletePerson();
             peopleListView.getItems().remove(peopleListView.getSelectionModel());
             logger.info("DELETING " + peopleListView.getSelectionModel().getSelectedItem().getFirstName() + " " + peopleListView.getSelectionModel().getSelectedItem().getLastName());

@@ -1,5 +1,6 @@
 package main.login;
 
+import main.services.PeopleController;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -43,6 +44,7 @@ public class PeopleLoginController {
     private static Logger logger = LogManager.getLogger();
     private static final String WS_URL = "http://localhost:8080";
     private static String token;
+    private static PeopleController myPeopleController;
     private static PeopleGateway myGateway;
     private static CloseableHttpClient httpclient;
     ArrayList<People> peoples = new ArrayList<People>();
@@ -125,7 +127,9 @@ public class PeopleLoginController {
                 httpclient.close();
                 return;
             }
-            myGateway = new PeopleGateway(WS_URL+"/people", token);
+
+            myPeopleController = new PeopleController();
+            myGateway = new PeopleGateway(WS_URL+"/people", token, myPeopleController.getConnection());
             logger.info("Session token: " + token);
 
         } catch(Exception e) {
