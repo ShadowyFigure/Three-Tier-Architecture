@@ -7,6 +7,7 @@ import java.util.ResourceBundle;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -162,6 +163,7 @@ public class PeopleDetailController implements Initializable{
         desc.setCellValueFactory(new PropertyValueFactory<>("change_msg"));
         dateTime.setCellValueFactory(new PropertyValueFactory<>("when_occurred"));
         changedBy.setCellValueFactory(new PropertyValueFactory<>("changed_by"));
+        auditData.setPlaceholder(new Label("No audit trail created yet for this Person"));
 
         for(Audit a : auditList) {
             audits.add(a);
