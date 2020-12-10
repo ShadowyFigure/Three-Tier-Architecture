@@ -5,6 +5,7 @@ Main\Audit.class
 Main\list\PeopleListController.class
 Main\detail\PeopleDetailController.class
 Main\PeopleException.class
+Main\GetPeoples.class
 Main\People.class
 Main\ViewSwitcher.class
 Main\PeopleGateway.class

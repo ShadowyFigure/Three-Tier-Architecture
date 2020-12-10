@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class People {
     private static final Logger logger = LogManager.getLogger();
@@ -13,16 +14,18 @@ public class People {
     private String lastName;
     LocalDate dateOfBirth;
     private int age;
+    private LocalDateTime lastModified;
 
     public People() {
     }
 
-    public People(int id, String firstName, String lastName, LocalDate dateOfBirth, int age){
+    public People(int id, String firstName, String lastName, LocalDate dateOfBirth, int age, LocalDateTime lastModified){
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
         this.age = age;
+        this.lastModified = lastModified;
 
         //logger.debug("CREATING " + firstName + " " + lastName);
     }
@@ -65,6 +68,8 @@ public class People {
 
     //TODO: Add validator
     public int setId(int id){ return this.id = id; }
+
+    public LocalDateTime getLastModified(){ return lastModified;}
 
     @Override
     public String toString() {

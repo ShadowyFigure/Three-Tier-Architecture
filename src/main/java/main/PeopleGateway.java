@@ -1,5 +1,6 @@
 package main;
 
+import javafx.scene.control.Alert;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -19,6 +20,8 @@ import org.json.JSONObject;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.sql.Connection;
 
@@ -83,8 +86,9 @@ public class PeopleGateway {
         }
     }
 
-    public ArrayList<People> getPeoples() {
+    public GetPeoples getPeoples(int currentPage, String query, int pageSize) {
         ArrayList<People> peoples = new ArrayList<People>();
+        int totalRows = 0;
 
         try {
             // we know this is a GET request so create a get request and pass it to getResponseAsString
@@ -92,19 +96,27 @@ public class PeopleGateway {
             HttpGet request = new HttpGet(wsURL);
             // specify Authorization header
             request.setHeader("Authorization", sessionId);
+            request.setHeader("query", query);
+            request.setHeader("currentPage", String.valueOf(currentPage));
+            request.setHeader("pageSize", String.valueOf(pageSize));
 
             response = waitForResponseAsString(request);
+            int end = response.indexOf('[');
+            totalRows = Integer.parseInt(response.substring(0, end));
+            response = response.substring(end);
 
             for(Object obj : new JSONArray(response)) {
                 JSONObject jsonObject = (JSONObject) obj;
                 LocalDate localDate = LocalDate.parse(jsonObject.getString("dateOfBirth"));
-                peoples.add(new People(jsonObject.getInt("id"), jsonObject.getString("firstName"), jsonObject.getString("lastName"), localDate, jsonObject.getInt("age")));
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+                LocalDateTime localDateTime = LocalDateTime.parse(jsonObject.getString("lastModified"), formatter);
+                peoples.add(new People(jsonObject.getInt("id"), jsonObject.getString("firstName"), jsonObject.getString("lastName"), localDate, jsonObject.getInt("age"), localDateTime));
             }
         } catch (Exception e) {
             throw new PeopleException(e);
         }
-
-        return peoples;
+        GetPeoples result = new GetPeoples(totalRows, pageSize, currentPage, peoples);
+        return result;
     }
 
     public ArrayList<Audit> getAudit() {
@@ -147,6 +159,15 @@ public class PeopleGateway {
                 case 401:
                     logger.error("401 response received");
                     throw new PeopleException("401");
+                case 405:
+                    logger.error("405 response received");
+                    // create a scene
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setTitle("Save Error");
+                    alert.setHeaderText("Widget modified by someone else!");
+                    alert.setContentText("Please redo your changes and try to save again.");
+                    alert.showAndWait();
+                    ViewSwitcher.getInstance().switchView(ViewType.PeopleListView);
                 default:
                     logger.error("non-200 response received");
                     throw new PeopleException("Non-200 status code returned: " + response.getStatusLine());

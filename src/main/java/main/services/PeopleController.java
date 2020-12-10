@@ -17,6 +17,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 import javax.annotation.PostConstruct;
@@ -56,7 +58,7 @@ public class PeopleController{
                 if(rows.getString("password").compareTo((String) credentials.get("password")) != 0){
                     return new ResponseEntity<String>("Invalid User Credentials", HttpStatus.valueOf(401));
                 }
-                sessionId = generateRandomString(20);
+                sessionId = generateRandomString(rows.getString("id"));
                 st = connection.prepareStatement("INSERT INTO Sessions (id, token) values (?, ?)");
                 st.setInt(1, Integer.parseInt(rows.getString("id")));
                 st.setString(2, sessionId);
@@ -64,7 +66,7 @@ public class PeopleController{
                 return new ResponseEntity<String>("{\"session_id\":\""+sessionId+"\"}", HttpStatus.valueOf(200));
 
             }catch(SQLException e1){
-                throw new PeopleException(e1);
+                return new ResponseEntity<String>("Invalid User Credentials", HttpStatus.valueOf(401));
             }
         }catch(Exception e){
             logger.error(e);
@@ -75,11 +77,22 @@ public class PeopleController{
     @GetMapping("/people")
     public ResponseEntity<String> fetchPeoples(@RequestHeader Map<String, String> headers) {
         String sessionToken = "";
+        String query = "";
+        int currentNum = 0;
+        int pageSize = 1;
         Set<String> keys = headers.keySet();
         for(String key : keys){
             if(key.equalsIgnoreCase("authorization"))
                 sessionToken = headers.get(key);
+            if(key.equalsIgnoreCase("query"))
+                query = headers.get(key);
+            if(key.equalsIgnoreCase("currentPage"))
+                currentNum = Integer.parseInt(headers.get(key));
+            if(key.equalsIgnoreCase("pageSize"))
+                pageSize = Integer.parseInt(headers.get(key));
         }
+        int limitStart = (currentNum-1) * pageSize;
+        query += "%";
         PreparedStatement st = null;
         ResultSet rows = null;
         try {
@@ -98,8 +111,17 @@ public class PeopleController{
 
         JSONObject newJson = new JSONObject();
         String returnString = "";
+        String totalRows = "";
+        int tmp;
         try {
-            st = connection.prepareStatement("select * from People");
+            st = connection.prepareStatement("select id from People where lastName like ?");
+            st.setString(1, query);
+            rows = st.executeQuery();
+            rows.last();
+            tmp = rows.getRow();
+            totalRows = String.valueOf(tmp-1);
+            st = connection.prepareStatement("select * from People where lastName like ? order by id limit "+limitStart+", "+pageSize);
+            st.setString(1, query);
             rows = st.executeQuery();
             while(rows.next()) {
                 newJson.put("id", rows.getString("id"));
@@ -107,10 +129,11 @@ public class PeopleController{
                 newJson.put("firstName", rows.getString("firstName"));
                 newJson.put("dateOfBirth", rows.getString("dateOfBirth"));
                 newJson.put("age", rows.getString("age"));
+                newJson.put("lastModified", rows.getString("last_modified"));
                 returnString += newJson.toString();
                 returnString += ", ";
             }
-            returnString = "[" + returnString+ "]";
+            returnString = totalRows+"[" + returnString+ "]";
 
             return new ResponseEntity<String>(returnString, HttpStatus.valueOf(200));
 
@@ -157,6 +180,7 @@ public class PeopleController{
             passJson.put("firstName", rows.getString("firstName"));
             passJson.put("dateOfBirth", rows.getString("dateOfBirth"));
             passJson.put("age", rows.getString("age"));
+            passJson.put("lastModified", rows.getString("last_modified"));
 
         }catch(SQLException e1){
             System.out.print(e1);
@@ -238,57 +262,64 @@ public class PeopleController{
 
             //Put total data
             connection.setAutoCommit(false);
-            st = connection.prepareStatement("UPDATE People SET firstName = ?, lastName = ?, dateOfBirth = ?, age = ? WHERE id = ?");
-            st.setInt(5, Integer.parseInt((String) passJson.get("id")));
-            st.setString(2, (String) passJson.get("lastName"));
-            st.setString(1, (String) passJson.get("firstName"));
-            LocalDate localDate = LocalDate.parse((String) passJson.get("dateOfBirth"));
-            st.setDate(3, java.sql.Date.valueOf( localDate ));
-            st.setInt(4, Integer.parseInt((String) passJson.get("age")));
-            rows2 = st.executeUpdate();
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+            LocalDateTime localDateTime = LocalDateTime.parse(rows.getString("last_modified"), formatter);
+            if(localDateTime.toString().compareTo(passJson.getString("lastModified")) == 0) {
+                st = connection.prepareStatement("UPDATE People SET firstName = ?, lastName = ?, dateOfBirth = ?, age = ? WHERE id = ?");
+                st.setInt(5, Integer.parseInt((String) passJson.get("id")));
+                st.setString(2, (String) passJson.get("lastName"));
+                st.setString(1, (String) passJson.get("firstName"));
+                LocalDate localDate = LocalDate.parse((String) passJson.get("dateOfBirth"));
+                st.setDate(3, java.sql.Date.valueOf(localDate));
+                st.setInt(4, Integer.parseInt((String) passJson.get("age")));
+                rows2 = st.executeUpdate();
 
-            //Audit Trail commit for all possible changes
-            if(ageChanged == true) {
-                st = connection.prepareStatement("INSERT INTO Audit (id, change_msg, changed_by, person_id) values(?, ?, ?, ?)");
-                st.setInt(1, 0);
-                st.setString(2, "age changed from " + rows.getString("age") + " to " + passJson.get("age"));
-                st.setString(3, username);
-                st.setInt(4, Integer.parseInt((String) personId));
-                rows2 = st.executeUpdate();
+                //Audit Trail commit for all possible changes
+                if(ageChanged == true) {
+                    st = connection.prepareStatement("INSERT INTO Audit (id, change_msg, changed_by, person_id) values(?, ?, ?, ?)");
+                    st.setInt(1, 0);
+                    st.setString(2, "age changed from " + rows.getString("age") + " to " + passJson.get("age"));
+                    st.setString(3, username);
+                    st.setInt(4, Integer.parseInt((String) personId));
+                    rows2 = st.executeUpdate();
+                }
+                if(lastNameChanged == true) {
+                    st = connection.prepareStatement("INSERT INTO Audit (id, change_msg, changed_by, person_id) values(?, ?, ?, ?)");
+                    st.setInt(1, 0);
+                    st.setString(2, "lastName changed from " + rows.getString("lastName") + " to " + passJson.get("lastName"));
+                    st.setString(3, username);
+                    st.setInt(4, Integer.parseInt((String) personId));
+                    rows2 = st.executeUpdate();
+                }
+                if(firstNameChanged == true) {
+                    st = connection.prepareStatement("INSERT INTO Audit (id, change_msg, changed_by, person_id) values(?, ?, ?, ?)");
+                    st.setInt(1, 0);
+                    st.setString(2, "firstName changed from " + rows.getString("firstName") + " to " + passJson.get("firstName"));
+                    st.setString(3, username);
+                    st.setInt(4, Integer.parseInt((String) personId));
+                    rows2 = st.executeUpdate();
+                }
+                if(dateOfBirthChanged == true) {
+                    st = connection.prepareStatement("INSERT INTO Audit (id, change_msg, changed_by, person_id) values(?, ?, ?, ?)");
+                    st.setInt(1, 0);
+                    st.setString(2, "dateOfBirth changed from " + rows.getString("dateOfBirth") + " to " + passJson.get("dateOfBirth"));
+                    st.setString(3, username);
+                    st.setInt(4, Integer.parseInt((String) personId));
+                    rows2 = st.executeUpdate();
+                }
+                if(idChanged == true) {
+                    st = connection.prepareStatement("INSERT INTO Audit (id, change_msg, changed_by, person_id) values(?, ?, ?, ?)");
+                    st.setInt(1, 0);
+                    st.setString(2, "id changed from " + rows.getString("id") + " to " + passJson.get("id"));
+                    st.setString(3, username);
+                    st.setInt(4, Integer.parseInt((String) personId));
+                    rows2 = st.executeUpdate();
+                }
+                connection.commit();
             }
-            if(lastNameChanged == true) {
-                st = connection.prepareStatement("INSERT INTO Audit (id, change_msg, changed_by, person_id) values(?, ?, ?, ?)");
-                st.setInt(1, 0);
-                st.setString(2, "lastName changed from " + rows.getString("lastName") + " to " + passJson.get("lastName"));
-                st.setString(3, username);
-                st.setInt(4, Integer.parseInt((String) personId));
-                rows2 = st.executeUpdate();
+            else{
+                return new ResponseEntity<String>("Invalid Timestamp", HttpStatus.valueOf(405));
             }
-            if(firstNameChanged == true) {
-                st = connection.prepareStatement("INSERT INTO Audit (id, change_msg, changed_by, person_id) values(?, ?, ?, ?)");
-                st.setInt(1, 0);
-                st.setString(2, "firstName changed from " + rows.getString("firstName") + " to " + passJson.get("firstName"));
-                st.setString(3, username);
-                st.setInt(4, Integer.parseInt((String) personId));
-                rows2 = st.executeUpdate();
-            }
-            if(dateOfBirthChanged == true) {
-                st = connection.prepareStatement("INSERT INTO Audit (id, change_msg, changed_by, person_id) values(?, ?, ?, ?)");
-                st.setInt(1, 0);
-                st.setString(2, "dateOfBirth changed from " + rows.getString("dateOfBirth") + " to " + passJson.get("dateOfBirth"));
-                st.setString(3, username);
-                st.setInt(4, Integer.parseInt((String) personId));
-                rows2 = st.executeUpdate();
-            }
-            if(idChanged == true) {
-                st = connection.prepareStatement("INSERT INTO Audit (id, change_msg, changed_by, person_id) values(?, ?, ?, ?)");
-                st.setInt(1, 0);
-                st.setString(2, "id changed from " + rows.getString("id") + " to " + passJson.get("id"));
-                st.setString(3, username);
-                st.setInt(4, Integer.parseInt((String) personId));
-                rows2 = st.executeUpdate();
-            }
-            connection.commit();
 
         } catch(SQLException e1){
             System.out.println(e1);
@@ -463,16 +494,34 @@ public class PeopleController{
         return connection;
     }
 
-    public String generateRandomString(int n){
+    public String generateRandomString(String id){
         String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                 + "0123456789"
                 + "abcdefghijklmnopqrstuvxyz";
-        StringBuilder sb = new StringBuilder(n);
-
-        for(int i=0;i<n;i++){
+        StringBuilder sb = new StringBuilder(27 + id.length());
+        sb.append(id);
+        for(int i=0;i<8;i++){
             int index = (int) (characters.length() * Math.random());
             sb.append(characters.charAt(index));
         }
+        sb.append("-");
+        for(int i=0;i<4;i++){
+            int index = (int) (characters.length() * Math.random());
+            sb.append(characters.charAt(index));
+        }
+        sb.append("-");
+        for(int i=0;i<4;i++){
+            int index = (int) (characters.length() * Math.random());
+            sb.append(characters.charAt(index));
+        }
+        sb.append("-");
+        for(int i=0;i<4;i++){
+            int index = (int) (characters.length() * Math.random());
+            sb.append(characters.charAt(index));
+        }
+        String now = LocalDate.now().toString();
+        now = now.substring(0, 4);
+        sb.append(now);
         return sb.toString();
     }
 

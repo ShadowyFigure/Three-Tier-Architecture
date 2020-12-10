@@ -8,6 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import java.sql.SQLException;
+
 public class JavaFxApplication extends Application {
 
     private ConfigurableApplicationContext applicationContext;
@@ -15,10 +17,13 @@ public class JavaFxApplication extends Application {
     @Override
     public void init() {
         String[] args = getParameters().getRaw().toArray(new String[0]);
-
-        this.applicationContext = new SpringApplicationBuilder()
-                .sources(main.Main.class)
-                .run(args);
+        try {
+            this.applicationContext = new SpringApplicationBuilder()
+                    .sources(main.Main.class)
+                    .run(args);
+        }catch(Exception e1){
+            System.out.println("Spring boot failed to launch, may already be running");
+        }
     }
 
     @Override

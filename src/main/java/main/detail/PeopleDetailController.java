@@ -85,6 +85,7 @@ public class PeopleDetailController implements Initializable{
                 passJson.put("firstName", peopleFirstName.getText());
                 passJson.put("dateOfBirth", peopleDateOfBirth.getText());
                 passJson.put("age", Integer.toString(age));
+                passJson.put("lastModified", people.getLastModified());
 
                 if(((String) passJson.get("id")).compareTo(((String) originalValues.get("id"))) == 0)
                     passJson.remove("id");
